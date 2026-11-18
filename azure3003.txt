@@ -1,0 +1,16 @@
+winget install --id Python.Python.3.13 --exact --source winget --scope user --architecture x64
+ 
+ 
+py -3.13 -m venv .venv313
+.\.venv313\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv313\Scripts\python.exe -m pip install --no-deps -e
+ 
+py -3.13 --version
+ 
+.\.venv313\Scripts\Activate.ps1
+ 
+python --version
+ 
+pip install -r requirements.txt
+ 
+AZ Login
